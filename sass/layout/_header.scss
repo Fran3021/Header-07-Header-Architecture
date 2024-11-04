@@ -1,0 +1,41 @@
+.header-principal{
+    padding-top: 30px;
+    margin-bottom: 100px;
+    @include breakpoint(desktopxxl){
+        margin-bottom: 128px;
+    }
+    .container-header{
+        display: flex;
+        align-items: center;
+        gap: 280px;
+        @include breakpoint(desktopxxl){
+            gap: 311px;
+        }
+        .logo-header{
+            text-decoration: none;
+            color: $black;
+            font-size: 30px;
+            font-weight: 600;
+            @include breakpoint(desktopxxl){
+                font-size: 36px;
+            }
+        }
+        .menu-header{
+            ul{
+                display: flex;
+                gap: 45px;
+                a{
+                    text-decoration: none;
+                    color: $silver;
+                    font-size: 15px;
+                    &:hover{
+                        color: $black;
+                    }
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,101 @@
+<!--Obligatorio para que el navegador lo lea perfecto en lenguaje HTML-->
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!--Aqui el titulo para los buscadores-->
+  <title>Header 07 - Header Architecture</title>
+  
+  <!--Descripcion que sale al buscarlo en el navegador-->
+  <meta name="description" content="project">
+
+  <!--Palabras claves para los buscadores en navegadores-->
+  <meta name="keywords" content="project">
+
+  <!--Autor de la pagina-->
+  <meta name="autor" content="Fran">
+
+  <!--Añadimos la hoja de estilo CSS o SASS-->
+  <script defer type="module" src="/main.js"></script>
+
+  <!--Favicon de la pagina(icono)-->
+  <link rel="icon" href="./vite.svg" type="image/x-icon">
+
+  <!--Codificacion-->
+  <meta charset="UTF-8">
+
+  <!--Para que la web sea resposinve(El tamaño segun el dispositivo)-->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+  <!--Para algunos navegadores moviles(Color parte de arriba del HEADER)-->
+  <meta name="theme-color" content="FF0000">
+</head>
+
+<body>
+    <header class="header-principal">
+      <div class="container-header">
+        <a class="logo-header" href="#">ArchiFlex</a>
+        <nav class="menu-header">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Room Tour</a></li>
+            <li><a href="#">New Develepment</a></li>
+            <li><a href="#">Galleries</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="main-principal">
+      <div class="container-main">
+        <div class="title-buttons">
+          <h1>Build the architecture 
+            with art and heart. <img class="background-title-hero" src="img/background-title-hero.svg" alt=""></h1>
+            <p>Not only building an artistic architectural building but also understanding the function and people who will use it</p>
+            <ul class="buttons-hero">
+              <li><a class="button" href="#">Get Started<img class="icon-arrow-up" src="icons/icon-arrow-up.svg" alt=""></a></li>
+              <li><a class="no-button" href="#">Learn More<img class="icon-arrow-rigth" src="icons/icon-arrow-rigth.svg" alt=""></a></li>
+            </ul>
+        </div>
+        <div class="images-hero">
+          <img src="img/image-1-hero.jpg" alt="">
+          <img src="img/image-2-hero.jpg" alt="">
+        </div>
+        <div class="numbers-table">
+          <div class="numbers">
+            <article>
+              <h3>321</h3>
+              <p>Projects Completed</p>
+            </article>
+            <article>
+              <h3>25</h3>
+              <p>Awards</p>
+            </article>
+            <article>
+              <h3>31</h3>
+              <p>Experts</p>
+            </article>
+            <article class="background">
+              <h3>15</h3>
+              <p>Years Experience</p>
+              <img src="img/background-number.svg" alt="">
+            </article>
+          </div>
+          <div class="table">
+            <h4>Our Service</h4>
+            <ul class="tables">
+              <li class="border-bottom" >01<a href="#">Interior Designs<img src="icons/icon-arrow-table.svg" alt=""></a></li>
+              <li class="border-bottom" >02<a href="#">Architecture<img src="icons/icon-arrow-table.svg" alt=""></a></li>
+              <li>03<a href="#">Real State<img src="icons/icon-arrow-table.svg" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer> 
+
+    </footer>
+  </section>
+</body>
+</html>
+

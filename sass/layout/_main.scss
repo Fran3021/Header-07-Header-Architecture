@@ -1,0 +1,184 @@
+.main-principal{
+    .container-main{
+        position: relative;
+        .title-buttons{
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            gap: 25px;
+            margin-bottom: 200px;
+            @include breakpoint(desktopxxl){
+                gap: 32px;
+            }
+            h1{
+                position: relative;
+                font-size: 65px;
+                font-weight: normal;
+                font-family: $playfair;
+                @include breakpoint(desktopxxl){
+                        font-size: 80px;
+                }
+                .background-title-hero{
+                    position: absolute;
+                    top: -20px;
+                    left: -20px;
+                }
+            }
+            p{
+                color: $silver;
+                font-size: 20px;
+                margin-bottom: 20px;
+                @include breakpoint(desktopxxl){
+                        font-size: 24px;
+                        margin-bottom: 24px;
+                }
+            }
+            .buttons-hero{
+                display: flex;
+                gap: 45px;
+                align-items: center;
+                .button{
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    text-decoration: none;
+                    background-color: $black;
+                    color: $white;
+                    padding: 10px 18px;
+                    font-size: 15px;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                        padding: 15px 23px;
+                    }
+                }
+                .no-button{
+                    text-decoration: none;
+                    color: $black;
+                    display: flex;
+                    font-size: 15px;
+                    align-items: center;
+                    gap: 10px;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+        .images-hero{
+            position: absolute;
+            z-index: -1;
+            top: -5%;
+            right: -10%;
+            display: flex;
+            gap: 50px;
+            @include breakpoint(desktopxxl){
+                right: 0;
+                top: -8%;
+            }
+            img{
+                width: 40%;
+                @include breakpoint(desktopxxl){
+                    width: 100%;
+                }
+            }
+        }
+        .numbers-table{
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            .numbers{
+                display: flex;
+                gap: 60px;
+                @include breakpoint(desktopxxl){
+                    gap: 86px;
+                }
+                article{
+                    display: flex;
+                    flex-direction: column;
+                    width: 25%;
+                    h3{
+                        font-size: 50px;
+                        font-weight: 500;
+                        @include breakpoint(desktopxxl){
+                            font-size: 64px;
+                        }
+                    }
+                    p{
+                        font-size: 15px;
+                        color: $silver;
+                        width: 20%;
+                        text-align: left;
+                        @include breakpoint(desktopxxl){
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .background{
+                    position: relative;
+                    img{
+                        position: absolute;
+                        bottom: -80%;
+                        left: -100%;
+                        @include breakpoint(desktopxxl){
+                            bottom: -60%;
+                        }
+                    }
+                }
+            }
+            .table{
+                position: absolute;
+                right: 0;
+                bottom: 3%;
+                right: 3%;
+                background-color: $white;
+                padding: 20px;
+                @include breakpoint(desktopxxl){
+                    padding: 32px;
+                    bottom: 0;
+                    right: 2%;
+                }
+                h4{
+                    font-size: 15px;
+                    color: $black;
+                    @include breakpoint(desktopxxl){
+                        font-size: 18px;
+                    }
+                }
+                .tables{
+                    li{
+                        display: flex;
+                        align-items: center;
+                        color: $silver;
+                        font-size: 11px;
+                        padding-bottom: 10px;
+                        padding-top: 10px;
+                        gap: 30px;
+                        @include breakpoint(desktopxxl){
+                            font-size: 18px;
+                            padding-top: 25px;
+                            padding-bottom: 25px;
+                        }
+                        a{
+                            color: $black;
+                            text-decoration: none;
+                            font-size: 17px;
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            justify-content: space-between;
+                            @include breakpoint(desktopxxl){
+                                font-size: 24px;
+                            }
+                            img{
+                                margin-left: 80px;
+                            }
+                        }
+                    }
+                    .border-bottom{
+                        border-bottom: 1px solid $light-silver;
+                    }
+                }
+            }
+        }
+    }
+}
